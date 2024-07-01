@@ -1,0 +1,278 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+
+    --primary-text: #312D64;
+    --primary-background: #F9F4FB;
+    --secondary-background: linear-gradient(96deg, #343193 0%, #302C63 99.68%);
+    --primary-title: #B52184;
+}
+
+html, input, textarea, button {
+    font-family: "Mulish", sans-serif;
+    color: var(--primary-text);
+}
+
+
+h1, h2, legend {
+    color: var(--primary-title);
+
+    font-size: 3.2rem;
+    font-weight: 900;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+/* header */
+
+
+header {
+    background: var(--primary-background);
+    padding-bottom: 9.3rem;
+}
+
+header .container, header .content {
+    margin-inline: auto;
+    padding-inline: 3.2rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+
+header h1 {
+    margin-top: 2.6rem;
+}
+
+header p {
+    font-size: 2rem;
+    font-weight: 600;
+    width: 31rem;
+    margin-block: .5rem 2.6rem;
+}
+
+button {
+    all: unset;
+    cursor: pointer;
+}
+
+button img {
+    width: 6rem;
+}
+
+button:hover {
+    filter: brightness(0.7);
+}
+
+/* main */ 
+
+main {
+    background: var(--secondary-background);
+    padding: 5rem 3.2rem;
+}
+
+main article .content {
+    background: var(--primary-background);
+    margin-inline: auto;
+    margin-bottom: 5rem;
+
+    border-radius: 2rem;
+    padding: 2.6rem 5.2rem 2.6rem 2.6rem;
+}
+
+article .content img {
+    width: 8rem;
+}
+
+main h2 {
+    font-size: 2.9rem;
+    margin-top: 3.3rem;
+    margin-bottom: 1.9rem;
+}
+
+main p {
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+/* aside */
+
+aside {
+    background: var(--primary-background);
+}
+
+aside form {
+    padding: 7.8rem 3.9rem 6.5rem 4.3rem;
+    margin-inline: auto;
+}
+
+fieldset {
+    border: none;
+}
+
+fieldset legend {
+    margin-bottom: 4.3rem;
+}
+
+#name::placeholder {
+    background-image: url(./assets/icons/icon-person.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#email::placeholder {
+    background-image: url(./assets/icons/icon-email.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+input::placeholder {
+    padding-left: 3rem;
+}
+
+.input-wrapper ::placeholder, input, textarea {
+    background-color: var(--primary-background);
+
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.input-wrapper input, textarea {
+    padding: 1.2rem 1.6rem 1.2rem 1.4rem;
+    margin-bottom: 2.4rem;
+    width: 100%;
+
+    border: 2px solid var(--primary-text);
+    border-radius: 1.6rem;
+}
+
+form button {
+    color: var(--primary-background);
+    background: var(--secondary-background);
+    border-radius: 1.6rem;
+    border-style: none;
+
+    padding: 1.6rem;
+    font-size: 1.4rem;
+    margin-bottom: 6.5rem;
+    font-weight: 600;
+
+    cursor: pointer;
+}
+/* footer */
+
+footer {
+    background: var(--secondary-background);
+    color: var(--primary-background);
+
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 1.6rem;
+    text-align: center;
+}
+
+@media (min-width: 1365px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    
+    /*header*/
+  
+    header .container{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+
+        gap: 2.8rem;
+        margin-inline: 2rem;
+    }
+
+    header .content {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-items: flex-start;
+        margin: 0;
+    }
+
+    header h1 {
+        font-size: 5.9rem;
+    }
+
+    header p {
+        margin-bottom: 17rem;
+        font-size: 3.3rem;
+        width: 100%;
+    }
+
+
+    /* main */
+    main {
+        padding: 6.4rem 11rem;
+        margin-inline: auto;
+    }
+
+    main .container {
+        max-width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 8rem;
+    }
+
+    main article .content {
+        width: 36rem;
+        height: 44rem;
+        padding: 3.2rem;
+    }
+
+    main p {
+       font-size: 1.8rem;
+    }
+
+    main h2 {
+        font-size: 3.5rem;
+        margin-top: 4rem;
+        margin-bottom: 2.4rem;
+    }
+    /* aside */
+
+    aside .contact {
+        display: flex;
+        flex-direction: row;
+        gap: 9.2rem;
+    }
+
+    aside form {
+        margin-inline: auto;
+    }
+    
+    aside .fieldset-wrapper {
+        padding-left: 9rem;
+    }
+
+    aside legend {
+        font-size: 4.2rem;
+    }
+
+    aside .star {
+        width: 70rem;
+        height: auto;
+
+        background: url(./assets/images/stars.png);
+        background-size: cover;
+    }
+}
